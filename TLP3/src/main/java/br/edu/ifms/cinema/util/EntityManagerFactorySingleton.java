@@ -11,15 +11,15 @@ import javax.persistence.Persistence;
  *
  * @author conta
  */
-public class CreateEntityManagerFactorySingleton {
+public class EntityManagerFactorySingleton {
 
-    private EntityManagerFactory emf;
-    private final String PERSISTENCE_UNIT_NAME = "UP";
+    private static EntityManagerFactory emf;
+    private static final String PERSISTENCE_UNIT_NAME = "UP";
 
-    private CreateEntityManagerFactorySingleton() {
+    private EntityManagerFactorySingleton() {
     }
 
-    public EntityManagerFactory getEMF() {
+    public static EntityManagerFactory getEMF() {
         if (emf == null) {
             synchronized (EntityManagerFactory.class) {
                 if (emf == null) {

@@ -12,9 +12,7 @@ import javax.persistence.EntityManagerFactory;
  * @author conta
  */
 public class EntityManagerObjectFactory {
-    private EntityManagerFactory emf;
-    
-    public EntityManager getEM(){
-        return emf.createEntityManager();
+    public static EntityManager getEM(){
+        return EntityManagerFactorySingleton.getEMF().createEntityManager();
     }
 }
