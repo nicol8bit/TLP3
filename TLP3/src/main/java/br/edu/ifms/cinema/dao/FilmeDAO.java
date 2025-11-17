@@ -88,14 +88,14 @@ public class FilmeDAO implements GenericDAO<Filme> {
         em = EntityManagerObjectFactory.getEM();
         try {
             Query query = em.createQuery("SELECT f FROM Filme f");
-            query.getResultList();
+            return query.getResultList();
         } catch (Exception e) {
             System.err.println(e.getMessage());
             return new LinkedList<>();
         } finally {
             em.close();
         }
-        return null;
+
     }  
     
 }

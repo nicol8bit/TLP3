@@ -88,14 +88,13 @@ public class AssentoDAO implements GenericDAO<Assento> {
         em = EntityManagerObjectFactory.getEM();
         try {
             Query query = em.createQuery("SELECT a FROM Assento a");
-            query.getResultList();
+            return query.getResultList();
         } catch (Exception e) {
             System.err.println(e.getMessage());
             return new LinkedList<>();
         } finally {
             em.close();
         }
-        return null;
     }  
     
 }

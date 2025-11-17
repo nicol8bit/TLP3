@@ -89,14 +89,13 @@ public class SalaDAO implements GenericDAO<Sala> {
         em = EntityManagerObjectFactory.getEM();
         try {
             Query query = em.createQuery("SELECT s FROM Sala s");
-            query.getResultList();
+            return query.getResultList();
         } catch (Exception e) {
             System.err.println(e.getMessage());
             return new LinkedList<>();
         } finally {
             em.close();
         }
-        return null;
     }  
     
 }

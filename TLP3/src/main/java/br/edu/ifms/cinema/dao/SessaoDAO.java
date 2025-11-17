@@ -88,14 +88,13 @@ public class SessaoDAO implements GenericDAO<Sessao> {
         em = EntityManagerObjectFactory.getEM();
         try {
             Query query = em.createQuery("SELECT ss FROM Sessao ss");
-            query.getResultList();
+            return query.getResultList();
         } catch (Exception e) {
             System.err.println(e.getMessage());
             return new LinkedList<>();
         } finally {
             em.close();
         }
-        return null;
     }  
     
 }

@@ -89,14 +89,13 @@ public class CartaoFidelidadeDAO implements GenericDAO<CartaoFidelidade> {
         em = EntityManagerObjectFactory.getEM();
         try {
             Query query = em.createQuery("SELECT cf FROM CartaoFidelidade cf");
-            query.getResultList();
+            return query.getResultList();
         } catch (Exception e) {
             System.err.println(e.getMessage());
             return new LinkedList<>();
         } finally {
             em.close();
         }
-        return null;
     }         
     
 }

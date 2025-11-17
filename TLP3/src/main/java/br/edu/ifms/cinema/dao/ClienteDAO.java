@@ -88,14 +88,13 @@ public class ClienteDAO implements GenericDAO<Cliente> {
         em = EntityManagerObjectFactory.getEM();
         try {
             Query query = em.createQuery("SELECT c FROM Cliente c");
-            query.getResultList();
+             return query.getResultList();
         } catch (Exception e) {
             System.err.println(e.getMessage());
             return new LinkedList<>();
         } finally {
             em.close();
         }
-        return null;
     }  
     
 }
