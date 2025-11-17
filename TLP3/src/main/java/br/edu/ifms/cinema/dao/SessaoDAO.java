@@ -13,7 +13,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author conta
+ * @author Nicoli
  */
 public class SessaoDAO implements GenericDAO<Sessao> {
         private EntityManager em;

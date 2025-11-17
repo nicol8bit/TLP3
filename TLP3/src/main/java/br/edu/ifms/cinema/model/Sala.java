@@ -15,7 +15,7 @@ import javax.persistence.OneToMany;
 
 /**
  *
- * @author conta
+ * @author Nicoli
  */
 @Entity
 public class Sala implements Serializable {

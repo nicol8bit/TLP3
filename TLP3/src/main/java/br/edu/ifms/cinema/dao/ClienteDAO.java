@@ -13,7 +13,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author conta
+ * @author Nicoli
  */
 public class ClienteDAO implements GenericDAO<Cliente> {
     private EntityManager em;

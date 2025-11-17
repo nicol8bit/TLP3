@@ -14,7 +14,7 @@ import javax.persistence.OneToOne;
 
 /**
  *
- * @author conta
+ * @author Nicoli
  */
 @Entity
 public class CartaoFidelidade implements Serializable {

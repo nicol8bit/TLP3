@@ -14,7 +14,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author conta
+ * @author Nicoli
  */
 public class SalaDAO implements GenericDAO<Sala> {
     private EntityManager em;

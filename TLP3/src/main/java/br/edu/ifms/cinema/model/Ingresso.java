@@ -15,7 +15,7 @@ import javax.persistence.OneToOne;
 
 /**
  *
- * @author conta
+ * @author Nicoli
  */
 @Entity
 public class Ingresso implements Serializable {

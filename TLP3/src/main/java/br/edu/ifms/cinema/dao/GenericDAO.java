@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  *
- * @author conta
+ * @author Nicoli
  */
 public interface GenericDAO<T> {
     public void add(T entity);

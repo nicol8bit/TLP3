@@ -14,7 +14,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author conta
+ * @author Nicoli
  */
 public class CartaoFidelidadeDAO implements GenericDAO<CartaoFidelidade> {
     private EntityManager em;

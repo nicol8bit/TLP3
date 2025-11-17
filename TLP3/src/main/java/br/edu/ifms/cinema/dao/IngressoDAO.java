@@ -13,7 +13,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author conta
+ * @author Nicoli
  */
 public class IngressoDAO implements GenericDAO<Ingresso>{
     private EntityManager em;

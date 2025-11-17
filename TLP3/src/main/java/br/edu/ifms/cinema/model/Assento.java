@@ -14,7 +14,7 @@ import javax.persistence.ManyToOne;
 
 /**
  *
- * @author conta
+ * @author Nicoli
  */
 @Entity
 public class Assento implements Serializable {

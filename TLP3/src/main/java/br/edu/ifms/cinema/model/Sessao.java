@@ -17,7 +17,7 @@ import javax.persistence.OneToMany;
 
 /**
  *
- * @author conta
+ * @author Nicoli
  */
 @Entity
 public class Sessao implements Serializable {
@@ -28,9 +28,8 @@ public class Sessao implements Serializable {
     private Long id;
     private LocalDateTime horario;
     
-    @ManyToOne
     @JoinColumn(name="filme_id")
-    private Filme filme;
+    private Filme filme; 
     
     @ManyToOne
     @JoinColumn(name="sala_id")

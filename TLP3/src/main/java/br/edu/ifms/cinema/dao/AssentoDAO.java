@@ -13,7 +13,7 @@ import javax.persistence.Query;
 
 /**
  *
- * @author conta
+ * @author Nicoli
  */
 public class AssentoDAO implements GenericDAO<Assento> {
     private EntityManager em;

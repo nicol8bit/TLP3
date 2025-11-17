@@ -9,7 +9,7 @@ import javax.persistence.Persistence;
 
 /**
  *
- * @author conta
+ * @author Nicoli
  */
 public class EntityManagerFactorySingleton {
 
