@@ -28,6 +28,7 @@ public class Sessao implements Serializable {
     private Long id;
     private LocalDateTime horario;
     
+    @ManyToOne
     @JoinColumn(name="filme_id")
     private Filme filme; 
     

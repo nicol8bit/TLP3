@@ -2,19 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+
 package br.edu.ifms.cinema.dto;
 
-import br.edu.ifms.cinema.model.Filme;
 import java.time.LocalDateTime;
 
 /**
  *
  * @author Nicoli
  */
-public class SessaoRequestDTO {
+public class SessaoResponseDTO {
     private Long id;
     private LocalDateTime horario;
-    private FilmeRequestDTO filme;
+    private FilmeResponseDTO filme; 
+    private boolean status;
+    private String message;
 
     public Long getId() {
         return id;
@@ -32,13 +34,27 @@ public class SessaoRequestDTO {
         this.horario = horario;
     }
 
-    public FilmeRequestDTO getFilme() {
+    public FilmeResponseDTO getFilme() {
         return filme;
     }
 
-    public void setFilme(FilmeRequestDTO filme) {
+    public void setFilme(FilmeResponseDTO filme) {
         this.filme = filme;
     }
-    
-    
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }    
 }
